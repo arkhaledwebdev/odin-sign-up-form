@@ -22,3 +22,178 @@
     font-weight: 700;
     src: url('./fonts/merriweather-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
+
+  :root{
+    --main-green-color: rgb(86, 102, 109);
+    --bg-red-color: rgba(189, 97, 108, 0.2);
+    --bg-color: rgba(244, 221, 203,0.5);
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Merriweather', sans-serif;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-container, .image.side {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 420px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: var(--bg-red-color);
+    border-radius: 10px;
+  }
+
+  .image.logo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo.text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--main-green-color);
+  }
+
+  .main-container {
+    display: flex;
+    flex-grow: 100;
+    flex-direction: column;
+    background-color: var(--bg-color);
+  }
+
+
+  .header,form {
+    margin: 40px 40px 10px 40px;
+  }
+
+  .header>p {
+    display: inline-block;
+    font-weight: 700;
+  }
+
+  .header>h3 {
+    margin-top: 10px;
+    font-weight: 700;
+  }
+
+  .main-container>.form-container>h3 {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: 700;
+  }
+
+  .header>h3 + h3 {
+    margin-top: 20px;
+  }
+
+  .form-container{
+    background-color: white;
+  }
+
+  form{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-column,.input-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-column + .form-column{
+    margin-left: 50px;
+  }
+
+  label {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  input {
+    width: 250px;
+    padding: 4px;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    border: 2px solid #E5E7EB;
+  }
+
+  .footer {
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  #submit-button {
+    background-color: var(--main-green-color);
+    color: white;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .error-info {
+    min-height: 20px;
+    color: red;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
+  .name-error {
+    border: 2px solid red;
+  }
+
+  .name-valid {
+    border: 2px solid green;
+  }
+
+  
+
+
+  
+
+
+
+  
